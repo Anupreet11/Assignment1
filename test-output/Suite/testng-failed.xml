@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="abc@123"/>
+  <parameter name="firstname" value="Anupreet"/>
+  <parameter name="telephone" value="683983783"/>
+  <parameter name="email" value="abc@gmail.com"/>
+  <parameter name="url" value="https://naveenautomationlabs.com/opencart/"/>
+  <parameter name="lastname" value="Kaur"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.RegisterNewUserTest">
+        <methods>
+          <include name="RegisterUser" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="beforeclass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.RegisterNewUserTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.RegisterNewUserTest">
+        <methods>
+          <include name="RegisterUser" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="beforeclass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.RegisterNewUserTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
